@@ -1,20 +1,20 @@
-swagger: "2.0"
+openapi: 3.0.0
+
 info:
-  title: "Swagger Demo"
-  description: "Swagger Demo API"
-  version: "1.0.0"
-host: api-v2-int.chatso.io
-basePath: /api/v2
-schemes:
-  - https
-consumes:
-  - application/json
-produces:
-  - application/json
+  title: Sample OpenAPI 3.0
+  description: Demo description
+  version: 0.0.1
+
+servers:
+  - url: http://api.example.com/v1
+    description: Main (production) server
+  - url: http://int-api.example.com/v1
+    description: Staging server
+
 paths:
-  /:
+  /users:
     get:
-      description: Health check
+      description: Return a list of users.
       responses:
         200:
-          description: OK
+          description: A JSON array of users.

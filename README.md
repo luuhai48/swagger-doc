@@ -1,22 +1,45 @@
 # Install
 
-- Install Node.js [https://nodejs.org/](https://nodejs.org/)
-- Install `swagger-cli` package:
+Install packages:
 
 ```bash
-npm install -g swagger
+npm install
+```
+
+Or
+
+```bash
+yarn
 ```
 
 # Usage
 
-### Edit swagger document
+### Edit document
 
 ```bash
-swagger project edit
+npm run edit
+```
+
+Or
+
+```bash
+yarn edit
 ```
 
 The web server will be started. Follow the link in the terminal to edit the swagger document.
 
-### Run swagger
+### View document
 
-Open `index.html` file.
+Open `index.html` file using `live-server` on vscode.
+
+Or
+
+```bash
+npm run open
+```
+
+Or
+
+```bash
+yarn open
+```

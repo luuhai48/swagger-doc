@@ -1,5 +1,13 @@
 {
   "name": "swagger-demo",
   "version": "0.0.1",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "live-server": "^1.2.1",
+    "openapi-editor": "^0.3.0"
+  },
+  "scripts": {
+    "edit": "openapi-editor --file ./api/swagger/swagger.yaml --port 10021",
+    "open": "live-server --port=5501 --host=127.0.0.1 --watch=api/swagger/swagger.yaml,index.html"
+  }
 }
